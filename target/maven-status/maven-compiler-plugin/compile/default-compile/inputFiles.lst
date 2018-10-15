@@ -1,0 +1,12 @@
+D:\Eclipse_workspace_arif\urlwebservice\src\main\java\cross\gr\com\CORSFilter.java
+D:\Eclipse_workspace_arif\urlwebservice\src\main\java\service\gr\com\WebService.java
+D:\Eclipse_workspace_arif\urlwebservice\src\main\java\dao\gr\com\UrlEntityDao.java
+D:\Eclipse_workspace_arif\urlwebservice\src\main\java\factory\gr\com\GrSessionFactory.java
+D:\Eclipse_workspace_arif\urlwebservice\src\main\java\dao\gr\com\HitRecordDao.java
+D:\Eclipse_workspace_arif\urlwebservice\src\main\java\entity\gr\com\HitRecord.java
+D:\Eclipse_workspace_arif\urlwebservice\src\main\java\businesslayer\gr\com\UrlServiceRemote.java
+D:\Eclipse_workspace_arif\urlwebservice\src\main\java\entity\gr\com\UrlEntity.java
+D:\Eclipse_workspace_arif\urlwebservice\src\main\java\businesslayer\gr\com\UrlLogic.java
+D:\Eclipse_workspace_arif\urlwebservice\src\main\java\businesslayer\gr\com\UrlService.java
+D:\Eclipse_workspace_arif\urlwebservice\src\main\java\service\gr\com\ServiceManager.java
+D:\Eclipse_workspace_arif\urlwebservice\src\main\java\baseadd\gr\com\BaseApplication.java

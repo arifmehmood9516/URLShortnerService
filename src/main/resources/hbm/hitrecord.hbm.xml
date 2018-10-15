@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Oct 10, 2018 12:20:10 PM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="entity.gr.com.HitRecord" table="HITRECORD">
+        <id name="id" type="int">
+            <column name="ID" />
+            <generator class="native" />
+        </id>
+        <property name="urlShort" type="java.lang.String">
+            <column name="Name" />
+        </property>
+        <property name="urlFull" type="java.lang.String">
+            <column name="Original" />
+        </property>
+        <property name="date" type="java.sql.Date">
+            <column name="DATE" />
+        </property>
+        <property name="dateCreated" type="java.sql.Date">
+            <column name="DATECREATED" />
+        </property>
+        <property name="browser" type="java.lang.String">
+            <column name="BROWSER" />
+        </property>
+        <property name="opSys" type="java.lang.String">
+            <column name="OS" />
+        </property>
+    </class>
+</hibernate-mapping>

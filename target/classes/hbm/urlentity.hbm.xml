@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Oct 10, 2018 12:20:10 PM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="entity.gr.com.UrlEntity" table="URLENTITY">
+        <id name="id" type="int">
+            <column name="ID" />
+            <generator class="identity" />
+        </id>
+        <property name="fullname" type="java.lang.String">
+            <column name="FULLNAME" />
+        </property>
+        <property name="shortname" type="java.lang.String">
+            <column name="SHORTNAME" />
+        </property>
+        <property name="date" type="java.sql.Date">
+            <column name="DATE" />
+        </property>
+        <property name="urlhits" type="int">
+            <column name="URLHITS" />
+        </property>
+        <set name="hitrecords" table="HITRECORD" cascade="save-update,delete" lazy="false" fetch="select">
+            <key>
+                <column name="URL_ID" />
+            </key>
+            <one-to-many class="entity.gr.com.HitRecord" />
+        </set>
+    </class>
+</hibernate-mapping>
