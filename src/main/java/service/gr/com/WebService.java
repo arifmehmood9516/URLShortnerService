@@ -1,5 +1,6 @@
 package service.gr.com;
 
+import java.net.URI;
 import java.util.List;
 
 import javax.ws.rs.Consumes;
@@ -59,13 +60,11 @@ public class WebService {
 	@GET
     @Path("/hiturl/{shortname}")
 	@Consumes(MediaType.TEXT_HTML)
-	@Produces(MediaType.TEXT_HTML)
 	 public Response urlHit(@HeaderParam("user-agent") String userAgent,@PathParam("shortname") String shorturl) 
 	 {
     	UrlServiceRemote br = (UrlServiceRemote ) ServiceManager.jndiLookup(UrlService.class);
-    	String urlFull=br.hitUrl(shorturl,userAgent);
-    	return Response.status(200).entity(urlFull).build();
-
+    	URI urlFull=URI.create(br.hitUrl(shorturl,userAgent));
+    	return Response.temporaryRedirect(urlFull).build();
     }
 	
 	
