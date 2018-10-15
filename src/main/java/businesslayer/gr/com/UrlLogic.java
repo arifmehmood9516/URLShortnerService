@@ -36,7 +36,7 @@ public class UrlLogic {
 			
 			
 			myRand = new Random();
-			keyLength = 8;
+			keyLength = 5;
 			myChars = new char[62];
 			for (int i = 0; i < 62; i++) {
 				int j = 0;

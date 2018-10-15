@@ -8,7 +8,7 @@
             <column name="ID" />
             <generator class="identity" />
         </id>
-        <property name="fullname" type="java.lang.String">
+        <property name="fullname" type="org.hibernate.type.TextType">
             <column name="FULLNAME" />
         </property>
         <property name="shortname" type="java.lang.String">

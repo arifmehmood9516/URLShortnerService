@@ -11,7 +11,7 @@
         <property name="urlShort" type="java.lang.String">
             <column name="Name" />
         </property>
-        <property name="urlFull" type="java.lang.String">
+        <property name="urlFull" type="org.hibernate.type.TextType">
             <column name="Original" />
         </property>
         <property name="date" type="java.sql.Date">
